@@ -1,0 +1,117 @@
+body {
+  background-color: whitesmoke;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url("https://thumbs.dreamstime.com/z/programming-technology-concept-creative-glowing-circuit-coding-background-d-rendering-146634855.jpg")
+    no-repeat content-box;
+}
+
+/* Static row style */
+.static-row {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-weight: bolder;
+}
+div.tabulator-col {
+  font-weight: bolder;
+}
+.tabulator-row:nth-child(even) {
+  background-color: darkblue;
+  color: white;
+  font-weight: bold;
+}
+.tabulator-row:nth-child(odd) {
+  background-color: cyan;
+  color: black;
+  font-weight: bold;
+}
+.tabulator-row:nth-child(odd):hover {
+  background-color: deeppink;
+  color: black;
+  cursor: pointer;
+}
+.tabulator-row:nth-child(even):hover {
+  cursor: pointer;
+  background-color: deeppink;
+  color: black;
+}
+div.tabulator-col-content {
+  background-color: black;
+  color: white;
+}
+/* Table container */
+#example-table {
+  margin-top: 50px;
+  padding: 20px;
+  border: 5px solid black;
+  background-color: blue;
+}
+
+/* Buttons */
+button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: cyan;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+}
+
+/* Main title */
+h1 {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 30px;
+  color: white;
+}
+
+/* Import button */
+#pdf-import {
+  margin-left: 10px;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.tabulator-table .tabulator-selected {
+  background-color: deeppink; /* Change this to the desired background color */
+}
+
+.tabulator .tabulator-footer .tabulator-page-counter {
+  font-weight: bolder;
+  color: black;
+}
+.tabulator .tabulator-footer .tabulator-paginator {
+  color: black;
+}
+button.tabulator-page {
+  color: black;
+}
+/* Apply the animation to the table */
+.tabulator {
+  animation: fadeIn 1s ease-in-out; /* Change animation duration and timing function as needed */
+}

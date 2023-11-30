@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tabulator-tables@5.5.2/dist/css/tabulator.min.css"
+      rel="stylesheet"
+    />
+    <script src="script.js"></script>
+    <link
+      href="https://unpkg.com/tabulator-tables@5.5.2/dist/css/tabulator.min.css"
+      rel="stylesheet"
+    />
+    <!-- Add Moment.js library -->
+<script src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/tabulator-tables@5.5.2/dist/js/tabulator.min.js"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tabulator/5.5.2/js/tabulator.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/438b90934c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.20/jspdf.plugin.autotable.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <style></style>
+  </head>
+  <body>
+    <div class="static-row">
+      <div style="margin-top: 20px">
+        Rows: <span id="visibleRowCount">0</span> /
+        <span id="totalRowCount">0</span>
+      </div>
+      <div>
+        <button id="print-table" title="print">
+          <i
+            style="margin-left: 2px; font-size: xx-large"
+            class="fa-solid fa-print fa-shake"
+          ></i>
+        </button>
+        <button id="download-pdf" title="pdf download">
+          <i
+            style="margin-left: 2px; font-size: xx-large"
+            class="fa-solid fa-file-pdf fa-flip"
+          ></i>
+          <i
+            style="margin-left: 2px; font-size: xx-large"
+            class="fa-solid fa-down-long fa-bounce"
+          ></i>
+        </button>
+        <button style="margin-right: 20px" id="download-excel" title="csv download">
+          <i
+            style="margin-left: 2px; font-size: xx-large"
+            class="fa-solid fa-file-csv fa-flip"
+          ></i>
+          <i
+            style="margin-left: 2px; font-size: xx-large"
+            class="fa-solid fa-down-long fa-bounce"
+          ></i>
+        </button>
+      </div>
+    </div>
+    <div style="text-align: center">
+      <button id="addDataButton" style="text-align: center; margin-top: 15vh" title="add data">
+        <span style="font-size: x-large">Add</span
+        ><i
+          style="margin-left: 2px; font-size: xx-large"
+          class="fa-solid fa-plus fa-bounce"
+        ></i>
+      </button>
+      <button id="pdf-import" title="import file">
+        <span style="font-size: x-large">Import</span
+        ><i
+          style="margin-left: 2px; font-size: xx-large"
+          class="fa-solid fa-file-import fa-spin-pulse"
+        ></i>
+      </button>
+    </div>
+
+    <h1
+      style="
+        font-size: 50px;
+        text-align: center;
+        color: white;
+        font-weight: bolder;
+        color: lime;
+        font-family: 'Font Awesome 5 Free';
+      "
+    >
+      Tabulator App
+      <i
+        style="margin-left: 5px"
+        class="fa-brands fa-wizards-of-the-coast fa-beat"
+      ></i>
+    </h1>
+    <div id="example-table" style="margin-top: 10vh"></div>
+
+    <div id="pagination" class="tabulator-pagination"></div>
+  </body>
+</html>
